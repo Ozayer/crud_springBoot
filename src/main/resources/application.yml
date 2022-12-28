@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://${DB_HOST:localhost};databaseName=test;encrypt=true;trustServerCertificate=true
+    username: ${DB_USER:sa}
+    password: ${DB_PASS:MSSQLexpress1}
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
